@@ -125,25 +125,25 @@
 				</attribute>
 
 				<attribute qualifier="name" type="java.lang.String">
-				<modifiers write="true" read="true" optional="false"
+				<modifiers write="true" read="true" optional="true"
 						   search="true" unique="false" />
 				<persistence type="property" />
 			   </attribute>
 
 				<attribute qualifier="designation" type="java.lang.String">
-				<modifiers write="true" read="true" optional="false"
+				<modifiers write="true" read="true" optional="true"
 						   search="true" unique="false" />
 				<persistence type="property" />
 			</attribute>
 
 			<attribute qualifier="pfnumber" type="java.lang.String">
-					<modifiers write="true" read="true" optional="false"
+					<modifiers write="true" read="true" optional="true"
 							   search="true" unique="false" />
 					<persistence type="property" />
 				</attribute>
 
 				<attribute qualifier="reportingManager" type="java.lang.String">
-					<modifiers write="true" read="true" optional="false"
+					<modifiers write="true" read="true" optional="true"
 							   search="true" unique="false" />
 					<persistence type="property" />
 				</attribute>
@@ -164,6 +164,13 @@
 					<persistence type="property" />
 					<modifiers search="false" optional="true" />
 					<defaultvalue>java.lang.Boolean.FALSE</defaultvalue>
+				</attribute>
+
+
+				<attribute type="Media" qualifier="empImage">
+					<modifiers write="true" read="true" optional="true"
+							   search="true" />
+					<persistence type="property" />
 				</attribute>
 
 			</attributes>

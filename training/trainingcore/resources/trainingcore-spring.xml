@@ -482,5 +482,14 @@
 	<import resource="/trainingcore/processes/quote/quote-buyer-process-spring.xml"/>
 	<import resource="/trainingcore/processes/quote/quote-salesrep-process-spring.xml"/>
 	<import resource="/trainingcore/processes/quote/quote-seller-approval-process-spring.xml"/>
+
+
+	<!-- PRESS -->
+	<bean id="defaultTrainingDao" class="de.hybris.training.core.dao.impl.DefaultTrainingDao"></bean>
+	<bean id="trainingService" class="de.hybris.training.core.service.impl.DefaultTrainingService">
+		<property name="trainingDao" ref="defaultTrainingDao"></property>
+	</bean>
+
+
 	
 </beans>
