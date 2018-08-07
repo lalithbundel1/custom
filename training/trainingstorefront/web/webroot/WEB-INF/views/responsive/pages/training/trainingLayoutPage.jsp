@@ -21,8 +21,7 @@ margin-top:12em;
 }
 </style>
 	<div class="wrapper">
-			<cms:pageSlot position="Section1" var="feature" element="div"
-				class="left-article-panel blogPage  col-md-8 col-sm-8">
+			<cms:pageSlot position="Section1" var="feature" element="div">
 				<cms:component component="${feature}" />
 			</cms:pageSlot>
 		
